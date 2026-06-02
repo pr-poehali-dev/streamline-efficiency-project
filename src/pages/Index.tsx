@@ -5,11 +5,11 @@ export default function Index() {
       <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-black">
         <div className="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
           <a href="/" className="text-xl font-bold tracking-tighter">
-            GRIDFORM
+            CONTENT LAB
           </a>
           <div className="flex space-x-8">
             <a href="#work" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Работы
+              Проекты
             </a>
             <a href="#about" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
               О нас
@@ -26,12 +26,12 @@ export default function Index() {
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-7 mb-8 md:mb-0">
             <h1 className="text-8xl md:text-9xl font-bold tracking-tighter leading-none mb-6">
-              GRID
+              CON
               <br />
-              FORM
+              TENT
             </h1>
             <p className="text-xl max-w-xl">
-              Ясность. Точность. Структура. Мы превращаем сложные идеи в чистый, функциональный дизайн, который говорит сам за себя.
+              Новости. Развлечения. Подкасты. Мы создаём контентные проекты, которые привлекают аудиторию и удерживают её внимание.
             </p>
           </div>
           <div className="col-span-12 md:col-span-5 flex items-center justify-center">
@@ -45,40 +45,40 @@ export default function Index() {
       {/* Work Section */}
       <section id="work" className="py-20 px-4 md:px-8 bg-black text-white">
         <div className="container mx-auto">
-          <h2 className="text-6xl font-bold tracking-tighter mb-12">РАБОТЫ</h2>
+          <h2 className="text-6xl font-bold tracking-tighter mb-12">ПРОЕКТЫ</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
             <div className="group">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">01</span>
+                  <span className="text-black group-hover:text-white text-8xl font-bold transition-colors duration-300">01</span>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">TechFlow Solutions</h3>
-              <p className="text-neutral-400">Полный брендинг и типографическая система для финтех-стартапа</p>
+              <h3 className="text-xl font-bold mb-2">CityPulse — новости города</h3>
+              <p className="text-neutral-400">Агрегатор локальных новостей с персонализированной лентой и рубриками по районам</p>
             </div>
 
             {/* Project 2 */}
             <div className="group">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">02</span>
+                  <span className="text-black group-hover:text-white text-8xl font-bold transition-colors duration-300">02</span>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Alpine Ventures</h3>
-              <p className="text-neutral-400">Минималистичная визуальная коммуникация для инвестиционного фонда</p>
+              <h3 className="text-xl font-bold mb-2">MemeVault — сборник мемов</h3>
+              <p className="text-neutral-400">Развлекательная платформа с тестами, мемами и интерактивным контентом для молодой аудитории</p>
             </div>
 
             {/* Project 3 */}
             <div className="group">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300">
-                  <span className="text-black text-8xl font-bold">03</span>
+                  <span className="text-black group-hover:text-white text-8xl font-bold transition-colors duration-300">03</span>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Nova Industries</h3>
-              <p className="text-neutral-400">Модульная дизайн-система для производственной компании</p>
+              <h3 className="text-xl font-bold mb-2">WaveShow — подкаст-платформа</h3>
+              <p className="text-neutral-400">Площадка для подкастов с архивом выпусков, текстовыми расшифровками и подпиской</p>
             </div>
           </div>
         </div>
@@ -96,31 +96,31 @@ export default function Index() {
             </div>
             <div className="col-span-12 md:col-span-7 md:pt-24">
               <p className="text-xl mb-6">
-                GRIDFORM - дизайн-студия, преданная принципам ясности, точности и осмысленной коммуникации. Мы верим, что великий дизайн незаметен - он просто работает.
+                CONTENT LAB — студия контентных проектов. Мы запускаем медиа, которые живут, растут и приносят реальную аудиторию.
               </p>
               <p className="mb-6">
-                Наш подход основан на системном мышлении и типографическом мастерстве. Мы используем модульные сетки, чистую гротескную типографику, асимметричные композиции и предметную фотографию для создания дизайна, который говорит ясно и убедительно.
+                Новостные агрегаторы, развлекательные сайты, подкаст-платформы — мы строим проекты от идеи до первых тысяч читателей. Наш подход: чёткая редакционная концепция, удобный интерфейс и контент, который хочется читать и шерить.
               </p>
               <p className="mb-6">
-                Основанная дизайнерами, убежденными, что форма следует за функцией, мы сотрудничаем с прогрессивными брендами, создавая визуальные языки, которые проверены временем.
+                Работаем с командами, которые хотят занять нишу в медиапространстве — локальном или тематическом. Если у вас есть идея контентного проекта, мы знаем, как её реализовать.
               </p>
               <div className="grid grid-cols-2 gap-4 mt-12">
                 <div>
                   <h3 className="text-sm uppercase tracking-widest mb-2">Принципы</h3>
                   <ul className="space-y-2">
-                    <li>Минимализм</li>
-                    <li>Модульные сетки</li>
-                    <li>Гротескная типографика</li>
-                    <li>Предметная фотография</li>
+                    <li>Редакционная точность</li>
+                    <li>Рост аудитории</li>
+                    <li>Удобный UX</li>
+                    <li>Виральный контент</li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-sm uppercase tracking-widest mb-2">Услуги</h3>
+                  <h3 className="text-sm uppercase tracking-widest mb-2">Форматы</h3>
                   <ul className="space-y-2">
-                    <li>Брендинг</li>
-                    <li>Визуальные системы</li>
-                    <li>Типографика</li>
-                    <li>Цифровой дизайн</li>
+                    <li>Новости и СМИ</li>
+                    <li>Развлечения и тесты</li>
+                    <li>Подкасты и видео</li>
+                    <li>Тематические медиа</li>
                   </ul>
                 </div>
               </div>
@@ -134,13 +134,13 @@ export default function Index() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-6xl font-bold tracking-tighter mb-8">КОНТАКТЫ</h2>
-              <p className="text-xl mb-8">Заинтересованы в сотрудничестве? Давайте обсудим ваш проект.</p>
+              <h2 className="text-6xl font-bold tracking-tighter mb-8">ЗАПУСК</h2>
+              <p className="text-xl mb-8">Есть идея контентного проекта? Расскажите — обсудим, как это реализовать.</p>
               <div className="space-y-4">
                 <p className="flex items-center">
                   <span className="w-24 text-sm uppercase tracking-widest">Почта</span>
-                  <a href="mailto:hello@gridform.ru" className="hover:underline">
-                    hello@gridform.ru
+                  <a href="mailto:hello@contentlab.ru" className="hover:underline">
+                    hello@contentlab.ru
                   </a>
                 </p>
                 <p className="flex items-center">
@@ -180,21 +180,32 @@ export default function Index() {
                   />
                 </div>
                 <div>
+                  <label htmlFor="project" className="block text-sm uppercase tracking-widest mb-2">
+                    Формат проекта
+                  </label>
+                  <input
+                    type="text"
+                    id="project"
+                    className="w-full bg-transparent border-b-2 border-white py-2 px-0 focus:outline-none focus:border-black placeholder-white/50"
+                    placeholder="Новости, подкаст, развлечения..."
+                  />
+                </div>
+                <div>
                   <label htmlFor="message" className="block text-sm uppercase tracking-widest mb-2">
-                    Сообщение
+                    Идея проекта
                   </label>
                   <textarea
                     id="message"
                     rows={4}
                     className="w-full bg-transparent border-b-2 border-white py-2 px-0 focus:outline-none focus:border-black placeholder-white/50"
-                    placeholder="Ваше сообщение"
+                    placeholder="Коротко опишите вашу идею"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="mt-8 px-8 py-3 bg-black text-white text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
                 >
-                  Отправить
+                  Обсудить проект
                 </button>
               </form>
             </div>
@@ -205,16 +216,16 @@ export default function Index() {
       {/* Footer */}
       <footer className="py-8 px-4 md:px-8 bg-black text-white">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm mb-4 md:mb-0">2025 GRIDFORM Studio. Все права защищены.</p>
+          <p className="text-sm mb-4 md:mb-0">2025 CONTENT LAB. Все права защищены.</p>
           <div className="flex space-x-8">
             <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Instagram
-            </a>
-            <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
-              Behance
-            </a>
-            <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
               Telegram
+            </a>
+            <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
+              VK
+            </a>
+            <a href="#" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
+              YouTube
             </a>
           </div>
         </div>

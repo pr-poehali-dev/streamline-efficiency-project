@@ -1,4 +1,19 @@
+import { useGoogleAuth } from "@/components/extensions/google-auth/useGoogleAuth";
+import { GoogleLoginButton } from "@/components/extensions/google-auth/GoogleLoginButton";
+import { UserProfile } from "@/components/extensions/google-auth/UserProfile";
+
+const AUTH_URL = "https://functions.poehali.dev/6173a44c-9687-4598-a813-c9df202dd34a";
+
 export default function Index() {
+  const auth = useGoogleAuth({
+    apiUrls: {
+      authUrl: `${AUTH_URL}?action=auth-url`,
+      callback: `${AUTH_URL}?action=callback`,
+      refresh: `${AUTH_URL}?action=refresh`,
+      logout: `${AUTH_URL}?action=logout`,
+    },
+  });
+
   return (
     <main className="min-h-screen bg-white">
       {/* Navigation */}
@@ -7,7 +22,7 @@ export default function Index() {
           <a href="/" className="text-xl font-bold tracking-tighter">
             CONTENT LAB
           </a>
-          <div className="flex space-x-8">
+          <div className="flex items-center space-x-8">
             <a href="#work" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
               Проекты
             </a>
@@ -17,6 +32,11 @@ export default function Index() {
             <a href="#contact" className="text-sm uppercase tracking-widest hover:text-red-600 transition-colors">
               Контакты
             </a>
+            {auth.isAuthenticated && auth.user ? (
+              <UserProfile user={auth.user} onLogout={auth.logout} />
+            ) : (
+              <GoogleLoginButton onClick={auth.login} isLoading={auth.isLoading} />
+            )}
           </div>
         </div>
       </nav>
